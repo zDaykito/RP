@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(https://i.ibb.co/HrfVRcx/navmenu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle.active {
+    background: url(https://i.ibb.co/rt3HybH/close.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.inicio {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e01d1d;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.inicio.active {
+    right: 300px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e01d1d;
+    mix-blend-mode: overlay;
+}
+
+.descripcion {
+    position: relative;
+    z-index: 10;
+}
+
+.descripcion h2 {
+    font-size: 6em;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.descripcion h3 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.descripcion p {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.descripcion a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.descripcion a:hover {
+    letter-spacing: 6px;
+}
+
+.social {
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+
+.social li a:hover {
+    transform: scale(0.5) translateY(-15px);
+}
+
+.navmenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navmenu ul {
+    position: relative;
+}
+
+.navmenu ul li {
+    list-style: none;
+}
+
+.navmenu ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #111;
+}
+
+.navmenu ul li a:hover {
+    color: #E01D1D;                                                                                                                                 
+}
+
+@media (max-width: 991px) {
+    .inicio,
+    .inicio header
+    {
+        padding: 40px;
+    }
+    .text h2
+    {
+        font-size: 3em;
+    }
+    .text h3
+    {
+        font-size: 2em;
+    }
+}
+
+
+
+/* CURSOS */
+
+
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.curso {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.curso h2 {
+    margin: 0;
+}
+
+.curso p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
